@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pirichar <pirichar@student.42quebec>       +#+  +:+       +#+        */
+/*   By: pirichar <pirichar@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:53:03 by pirichar          #+#    #+#             */
-/*   Updated: 2021/09/29 12:38:21 by pirichar         ###   ########.fr       */
+/*   Updated: 2021/11/05 23:59:52 by pirichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ static char	*ft_swap(char *str)
 	return (str);
 }
 
-char	*ft_itoa(int n)
+char	*ft_itoa(long long n)
 {
 	char	*rtn;
 	int		i;

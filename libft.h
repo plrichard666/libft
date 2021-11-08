@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pirichar <pirichar@student.42quebec>       +#+  +:+       +#+        */
+/*   By: pirichar <pirichar@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/22 13:09:01 by pirichar          #+#    #+#             */
-/*   Updated: 2021/09/27 14:30:01 by pirichar         ###   ########.fr       */
+/*   Updated: 2021/11/06 00:00:10 by pirichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,17 @@ int		ft_toupper(int c);
 int		ft_atoi(const char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_printf(const char *format, ...);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_bzero(void *s, size_t n);
 void	ft_putchar_fd(char c, int fd);
+void	ft_putchar(char c);
 void	ft_putstr_fd(char *s, int fd);
+void	ft_putstring(char *str);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void 	ft_putnbro(size_t num, size_t base_len, char *base);
+void	ft_putnbro_rtn(size_t num, size_t base_len, char *base, int *sum);
 void	*ft_memset(void *buf, int c, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
@@ -52,7 +57,7 @@ char	*ft_strdup(const char *s1);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strtrim(const char *s1, const char *set);
-char	*ft_itoa(int n);
+char	*ft_itoa(long long n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	**ft_split(const char *s, char c);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
