@@ -6,7 +6,7 @@
 /*   By: pirichar <pirichar@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/22 13:09:01 by pirichar          #+#    #+#             */
-/*   Updated: 2021/11/06 00:00:10 by pirichar         ###   ########.fr       */
+/*   Updated: 2021/11/08 22:14:01 by pirichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,11 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <errno.h>
+# include <stdio.h>
 # include <unistd.h>
-
+# include <stdarg.h>
+# include <string.h>
+# include <stddef.h>
 typedef struct s_list
 {
 	void			*content;
@@ -32,6 +35,8 @@ int		ft_isprint(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_atoi(const char *str);
+int		ft_putchar_rtn(char c);
+int		ft_putstring_rtn(char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_printf(const char *format, ...);
@@ -45,6 +50,9 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void 	ft_putnbro(size_t num, size_t base_len, char *base);
 void	ft_putnbro_rtn(size_t num, size_t base_len, char *base, int *sum);
+void	ft_putnbro_rtn_neg(int nb, int *sum);
+void	ft_putcharo_rtn(char c, int *sum);
+void 	ft_putnbro_rtn_pointer(size_t num, size_t base_len, char *base, int *sum);
 void	*ft_memset(void *buf, int c, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
