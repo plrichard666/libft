@@ -6,7 +6,7 @@
 /*   By: pirichar <pirichar@student.42quebec>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/22 13:03:35 by pirichar          #+#    #+#             */
-/*   Updated: 2021/09/22 13:05:33 by pirichar         ###   ########.fr       */
+/*   Updated: 2022/02/02 09:42:33 by pirichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd('2', fd);
 		n = 147483648;
 	}
-	if (n < 0 )
+	if (n < 0)
 	{
 		ft_putchar_fd('-', fd);
 		n = -n;

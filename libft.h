@@ -6,7 +6,7 @@
 /*   By: pirichar <pirichar@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/22 13:09:01 by pirichar          #+#    #+#             */
-/*   Updated: 2021/11/08 22:14:01 by pirichar         ###   ########.fr       */
+/*   Updated: 2022/02/02 10:01:08 by pirichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 # include <stdarg.h>
 # include <string.h>
 # include <stddef.h>
+
 typedef struct s_list
 {
 	void			*content;
@@ -48,11 +49,11 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putstring(char *str);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
-void 	ft_putnbro(size_t num, size_t base_len, char *base);
+void	ft_putnbro(size_t num, size_t base_len, char *base);
 void	ft_putnbro_rtn(size_t num, size_t base_len, char *base, int *sum);
 void	ft_putnbro_rtn_neg(int nb, int *sum);
 void	ft_putcharo_rtn(char c, int *sum);
-void 	ft_putnbro_rtn_pointer(size_t num, size_t base_len, char *base, int *sum);
+void	ft_putnbro_rtn_ptr(size_t num, size_t base_l, char *base, int *sum);
 void	*ft_memset(void *buf, int c, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
