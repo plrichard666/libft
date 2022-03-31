@@ -22,14 +22,13 @@
 char	*ft_strdup(const char *s1)
 {
 	char	*str;
-	int		num;
 
 	str = malloc(sizeof(char) * (ft_strlen(s1) + 1));
 	if (str == NULL)
 	{
 		return (0);
 	}
-	num = ft_strlcpy(str, s1, sizeof(char) * (ft_strlen(s1) + 1));
+	ft_strlcpy(str, s1, sizeof(char) * (ft_strlen(s1) + 1));
 	*(str + ft_strlen(s1)) = '\0';
 	return (str);
 }

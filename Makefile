@@ -56,6 +56,8 @@ SRCB = ft_lstnew.c			\
 	   ft_lstclear.c		\
 	   ft_lstiter.c			\
 	   ft_lstmap.c			\
+	   get_next_line.c		\
+
 
 
 CC = gcc
